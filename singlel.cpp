@@ -4,7 +4,7 @@ using namespace std;
 class Node
 {
     public:
-    int nomhs;
+    int noMhs;
     Node *next;
 };
 
@@ -20,6 +20,13 @@ class LinkedList
 
     void addNobe()
     {
-        
+        int nim;
+        cout<< "\nMasukkan Nomor Mahasiswa: ";
+        cin >> nim;
+
+        Node *nodeBaru = new Node;
+        nodeBaru ->noMhs = nim;
+
+        if (START == NULL || nim <= START->noMhs)
     }
 }
